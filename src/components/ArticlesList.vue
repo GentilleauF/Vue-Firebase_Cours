@@ -66,6 +66,7 @@ export default {
       <ul class="list-group">
         <li
           :key="index"
+          :class="{active: index ===currentIndex}"
           v-for="(unArticle, index) in articles"
           @click="setActiveArticle(unArticle, index)"
           class="list-group-item"
