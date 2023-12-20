@@ -20,6 +20,12 @@ const routes = [
     name: "add",
     component: () => import("./components/AddArticle.vue"),
   },
+
+  {
+    path: "/*",
+    name: "notFound",
+    component: () => import("./components/NotFound.vue"),
+  },
 ];
 
 const router = createRouter({ history: createWebHistory(), routes });
